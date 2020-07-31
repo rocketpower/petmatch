@@ -1,25 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MatchCard } from './components/match-card/match-card';
-import { makeStyles } from '@material-ui/core';
+import 'fontsource-roboto';
+import { MatchCard } from './components/match-card/MatchCard';
+import { makeStyles, ThemeProvider } from '@material-ui/core';
+import theme from './theme';
 
-const styles = makeStyles({
-    root: {
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-        marginTop: 100
-    },
+const useStyles = makeStyles({
+  root: {
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: 100
+  },
 });
 
-function App() {
-    const classes = styles();
-    return (
-        <div className={classes.root}>
-            <MatchCard />
-        </div>
-    );
+const App = () => {
+  const classes = useStyles();
+  return (
+    <ThemeProvider theme={theme}>
+      <div className={classes.root}>
+        <MatchCard />
+      </div>
+    </ThemeProvider>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
