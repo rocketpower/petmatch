@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'fontsource-roboto';
 import { MatchCard } from './components/match-card/MatchCard';
+import { Header } from './components/header/Header';
 import { makeStyles, ThemeProvider } from '@material-ui/core';
 import theme from './theme';
 
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.root}>
+        <Header />
         <MatchCard />
       </div>
     </ThemeProvider>
