@@ -1,5 +1,6 @@
 import React from 'react';
-import { makeStyles, AppBar, Toolbar, Typography } from '@material-ui/core';
+import { makeStyles, AppBar, Toolbar, IconButton } from '@material-ui/core';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 const useStyles = makeStyles(theme => ({
   nav: {
@@ -13,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'row',
     height: '64px',
-    width: '70%',
+    width: '50%',
     margin: '0 auto',
   }
 }));
@@ -24,7 +25,7 @@ export const Header = () => {
   return (
     <AppBar position="fixed" className={classes.nav}>
       <Toolbar className={classes.navMenu}>
-
+        <img src='/violet-logo32.png' alt='petmatch logo' />
       </Toolbar>
     </AppBar>
   );
