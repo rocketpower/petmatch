@@ -4,6 +4,6 @@
 
 ## Contributors
 
-Lautaro Soffici [https://github.com/lausoffici](@Github)
+Lautaro Soffici [@Github](https://github.com/lausoffici)
 
-Tirso J. Bello Ponce [https://github.com/tirsobponce](@Github)
+Tirso J. Bello Ponce [@Github](https://github.com/tirsobponce)
