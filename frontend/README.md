@@ -1,4 +1,4 @@
-# React.js for Petmatch fornt-end
+# React.js for Petmatch front-end
 
 To run the project you need to type the following command:
 
